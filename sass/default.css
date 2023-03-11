@@ -1,0 +1,86 @@
+h1,
+.h1 {
+  font-size: 36px !important;
+}
+
+h2,
+.h2 {
+  font-size: 32px !important;
+}
+
+h3,
+.h3 {
+  font-size: 28px !important;
+}
+
+h4,
+.h4 {
+  font-size: 20px !important;
+}
+
+h5,
+.h5 {
+  font-size: 18px !important;
+}
+
+h6,
+.h6 {
+  font-size: 15px !important;
+}
+
+.opacity-05 {
+	opacity: 0.05;
+}
+  
+.opacity-075 {
+	opacity: 0.075;
+}
+  
+.opacity-1 {
+	opacity: 0.1;
+}
+  
+.opacity-2 {
+	opacity: 0.2;
+}
+  
+.opacity-3 {
+	opacity: 0.3;
+}
+  
+.opacity-4 {
+	opacity: 0.4;
+}
+  
+.opacity-5 {
+	opacity: 0.5;
+}
+  
+.opacity-6 {
+	opacity: 0.6;
+}
+  
+.opacity-7 {
+	opacity: 0.7;
+}
+  
+.opacity-8 {
+	opacity: 0.8;
+}
+  
+.opacity-9 {
+	opacity: 0.9;
+}
+  
+.rounded {
+	border-radius: 6px !important;
+}
+
+.text-muted {
+	color: #8c98a4 !important;
+}
+
+a.text-muted:hover, a.text-muted:focus {
+	color: #7e8b99 !important;
+}
+

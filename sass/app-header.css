@@ -1,0 +1,100 @@
+[data-view=app-header] {
+  width: 100%;
+  background-color: #fff;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+[data-view=app-header][active] {
+  position: fixed;
+  z-index: 1030;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+[data-view=app-header] .container {
+  background-color: transparent;
+}
+[data-view=app-header] .branding a {
+  text-decoration: none;
+}
+[data-view=app-header] .branding img[data-image=logo] {
+  max-width: 240px;
+  height: auto;
+}
+[data-view=app-header] .navbar-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+[data-view=app-header] .navbar-wrapper .mobile-top-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+[data-view=app-header] .navbar-wrapper .mobile-top-section .navicon {
+  max-width: 100px;
+}
+[data-view=app-header] .navbar-wrapper ul.menu {
+  width: 100%;
+  background-color: #fff;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  flex: 1;
+}
+[data-view=app-header] .navbar-wrapper ul.menu[active]:not(.hidden) {
+  display: flex;
+  padding: 2rem 0;
+  height: calc(100vh - 100px);
+}
+[data-view=app-header] .navbar-wrapper ul.menu li.menu-item {
+  height: 100%;
+  background-color: transparent;
+}
+[data-view=app-header] .navbar-wrapper ul.menu li.menu-item a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--brand-primary);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+[data-view=app-header] .navbar-wrapper ul.menu li.menu-item a:hover {
+  color: var(--brand-accent);
+  text-decoration: none;
+}
+[data-view=app-header] .navbar-wrapper .navicon {
+  background-color: transparent;
+  color: var(--brand-primary);
+}
+
+@media only screen and (min-width: 768px) {
+  [data-view=app-header] .navbar-wrapper {
+    flex-direction: row;
+  }
+  [data-view=app-header] .navbar-wrapper ul.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+  }
+  [data-view=app-header] .navbar-wrapper .navicon {
+    display: none;
+  }
+}/*# sourceMappingURL=app-header.css.map */
